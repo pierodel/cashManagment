@@ -181,8 +181,10 @@ def makeWebhookResult(req):
 		parameters = result.get("parameters")
 		rank = parameters.get("rank").get("rank")
 
-		if rank > len(riksyAccountRank):
+		if int(rank) > len(riksyAccountRank):
 			speech = "The rank you requested is largest than the size of deficit list"
+		elif int(rank) <= 0:
+			speech = "The requested rank is invalid"
 		else:
 			account_group = riksyAccountRank[rank]
 			speech = "The account group you requested from the deficit list is " + account_group + "."
