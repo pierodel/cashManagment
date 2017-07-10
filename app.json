@@ -1,0 +1,7 @@
+{
+  "name": "API.AI Cash Management Webhook",
+  "description": "API.AI Cash Management Webhook Sample",
+  "repository": "https://github.com/pierodel/cashManagment",
+  "logo": "http://xvir.github.io/img/apiai.png",
+  "keywords": ["api.ai", "natural language"]
+}
